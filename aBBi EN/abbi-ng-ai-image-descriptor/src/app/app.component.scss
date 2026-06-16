@@ -94,7 +94,14 @@ mat-stepper {
 
 .app-title {
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.app-title-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 0.75rem;
 }
 
@@ -102,15 +109,9 @@ mat-stepper {
   width: 64px;
   height: 64px;
   object-fit: contain;
-  flex-shrink: 0;
 }
 
-.app-title-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.app-title-text h1,
-.app-title-text p {
+.app-title h1,
+.app-title p {
   margin: 0;
 }
