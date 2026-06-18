@@ -25,7 +25,7 @@ console.log(
 */
 
 export type TaskTypeId = 'altText' | 'transcription' | 'transcriptionBatchTei';
-export type LanguageCode = 'sv' | 'fi' | 'en' | 'lv';
+export type LanguageCode = 'en' | 'lv' | 'sv' | 'fi' ;
 
 export const TASK_CONFIGS: TaskTypeConfig[] = [
   {
@@ -39,18 +39,6 @@ export const TASK_CONFIGS: TaskTypeConfig[] = [
     defaultModel: 'gpt-4.1',
     variants: [
       {
-        id: 'sv',
-        label: 'Swedish',
-        languageCode: 'sv',
-        prompt: altTextSwedishPrompt
-      },
-      {
-        id: 'fi',
-        label: 'Finnish',
-        languageCode: 'fi',
-        prompt: altTextFinnishPrompt
-      },
-      {
         id: 'en',
         label: 'English',
         languageCode: 'en',
@@ -61,6 +49,18 @@ export const TASK_CONFIGS: TaskTypeConfig[] = [
         label: 'Latvian',
         languageCode: 'lv',
         prompt: altTextLatvianPrompt
+      },
+      {
+        id: 'sv',
+        label: 'Swedish',
+        languageCode: 'sv',
+        prompt: altTextSwedishPrompt
+      },
+      {
+        id: 'fi',
+        label: 'Finnish',
+        languageCode: 'fi',
+        prompt: altTextFinnishPrompt
       },
 
     ],
