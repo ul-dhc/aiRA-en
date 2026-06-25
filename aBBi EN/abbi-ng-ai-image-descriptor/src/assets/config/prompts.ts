@@ -108,7 +108,7 @@ export const TASK_CONFIGS: TaskTypeConfig[] = [
         id: 'no',
         label: 'Norwegian',
         languageCode: 'no',
-        prompt: altTextFinnishPrompt
+        prompt: altTextNorwegianPrompt
       },
       {
         id: 'sv',
